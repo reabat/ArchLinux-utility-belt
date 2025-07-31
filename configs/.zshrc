@@ -3,9 +3,12 @@ export ZSH="$HOME/.oh-my-zsh"
 
 
 # Oh my zsh
-ZSH_THEME="jonathan"
+#ZSH_THEME="jonathan"
+#ZSH_THEME="gianu"
+ZSH_THEME="agnoster"
+
 #plugins=(git sudo web-search golang)
-plugins=(git sudo golang)
+plugins=(git sudo golang themes)
 source $ZSH/oh-my-zsh.sh
 
 set -a
