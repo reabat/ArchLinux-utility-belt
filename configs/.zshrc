@@ -3,9 +3,9 @@ export ZSH="$HOME/.oh-my-zsh"
 
 
 # Oh my zsh
-#ZSH_THEME="jonathan"
+ZSH_THEME="jonathan"
 #ZSH_THEME="gianu"
-ZSH_THEME="agnoster"
+#ZSH_THEME="agnoster"
 
 #plugins=(git sudo web-search golang)
 plugins=(git sudo golang themes)
@@ -69,6 +69,9 @@ alias ys="yay -S"
 alias yss="yay -Ss"
 alias yr="yay -Rns"
 
+#Git
+alias gcp="git add . && git commit && git push"
+
 # Docker
 alias dc="docker"
 alias dcr="docker run"
@@ -97,3 +100,4 @@ alias td="mktemp -d -p ."
 alias tf="mktemp -p ."
 alias tg="tar -czvf"
 alias utg="tar -xzvf"
+alias tc="touch"
