@@ -71,6 +71,7 @@ alias yr="yay -Rns"
 
 #Git
 alias gcp="git add . && git commit && git push"
+alias gl="git log"
 
 # Docker
 alias dc="docker"
