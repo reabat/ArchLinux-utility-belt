@@ -8,7 +8,7 @@ ZSH_THEME="jonathan"
 #ZSH_THEME="agnoster"
 
 #plugins=(git sudo web-search golang)
-plugins=(git sudo golang themes)
+plugins=(sudo golang themes)
 source $ZSH/oh-my-zsh.sh
 
 set -a
@@ -58,7 +58,7 @@ alias allow_localhost3000="sudo ufw allow from 192.168.1.0/24 to any port 3000"
 alias disallow_localhost3000="sudo ufw delete allow from 192.168.1.0/24 to any port 3000"
 
 # PKG's
-alias pmr='sudo pacman -Rns'
+alias pmr='sudo pacman -Rs'
 alias pm_check_orphans="pacman -Qdtq"
 alias pm_clear_orphans="sudo pacman -Rns $(pacman -Qdtq)"
 alias pm_clear_cache='sudo paccache -rk1 && sudo paccache -ruk0 && yay -Scc --noconfirm'
@@ -72,6 +72,7 @@ alias yr="yay -Rns"
 #Git
 alias gcp="git add . && git commit && git push"
 alias gl="git log"
+alias gp="git push"
 
 # Docker
 alias dc="docker"
@@ -89,7 +90,7 @@ alias nu="npm update"
 
 # Other
 alias netTest="echo '\nPing google.com:\n' && ping -c 5 google.com && echo '\n-----\n\nTraceroute google.com:\n' && traceroute google.com && echo '\n-----\n\nSpeed test Selectel (Saint Petersburg, Russia) [167.91 km]:' && speedtest -s 16125"
-alias sdd_free="df -h /dev/sda2"
+alias ssd_free="df -h /dev/sda2"
 alias ir="input-remapper-control --command stop-all && input-remapper-control --command autoload"
 alias ir_stop="input-remapper-control --command stop-all"
 alias m="mc"
