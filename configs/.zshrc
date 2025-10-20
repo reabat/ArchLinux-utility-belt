@@ -73,6 +73,7 @@ alias yr="yay -Rns"
 alias gcp="git add . && git commit && git push"
 alias gl="git log"
 alias gp="git push"
+alias gaa="git add --all"
 
 # Docker
 alias dc="docker"
@@ -103,3 +104,4 @@ alias tf="mktemp -p ."
 alias tg="tar -czvf"
 alias utg="tar -xzvf"
 alias tc="touch"
+alias backup_ide="mkdir -p ~/github/settings-configs/$DATE_NOW && sleep 1 && cp -r {~/.config/JetBrains/WebStorm*,~/.config/JetBrains/GoLand*,~/.config/zed} ~/github/settings-configs/$DATE_NOW"
