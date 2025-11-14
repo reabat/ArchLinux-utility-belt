@@ -1,0 +1,19 @@
+BINARY_NAME := $(notdir $(CURDIR))
+
+.PHONY: build clean run start
+
+build:
+	@mkdir -p ./build
+	@go build -o ./build/$(BINARY_NAME) .
+
+clean:
+	@rm -f ./build/*
+
+run:
+	@go run .
+
+start: build
+	@./build/$(BINARY_NAME)
+
+mod:
+	@go mod init github.com/reabat/$(BINARY_NAME)
